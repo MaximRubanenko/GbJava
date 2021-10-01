@@ -11,12 +11,12 @@ public class Employee {
   Integer personAge;
 
   Employee() {
-    fio = "Иванов Иван Иванович";
-    position = "Tester";
-    email = "master@mai.ru";
-    tel = "89851112233";
-    salary = 150000;
-    personAge = 42;
+    fio = "unnown";
+    position = "unnown";
+    email = "unnown";
+    tel = "unnown";
+    salary = 0;
+    personAge = 18;
   }
 
   Employee(String fio, String position, String email, String tel, Integer salary, Integer personAge) {
