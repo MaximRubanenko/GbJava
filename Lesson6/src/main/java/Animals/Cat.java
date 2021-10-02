@@ -6,16 +6,16 @@ package Animals;
  */
 public class Cat extends Animal {
   final int DISTANCE_RUN_LIMIT = 200;
-  public static int count;
+  public static int cntCat;
   public Cat (String name){
     super.name = name;
-    count++;
+    cntCat++;
   }
 
   @Override
   public void run(int l) {
-    if (l < DISTANCE_RUN_LIMIT) {
-      System.out.println(name + " пробежал " + l + "метров.");
+    if (l >= 0  && l <= DISTANCE_RUN_LIMIT) {
+      System.out.println(name + " пробежал " + l + " метров.");
     } else {
       System.out.println("Коты не могут бегать на " + l + " метров!");
     }

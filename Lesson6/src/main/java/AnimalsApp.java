@@ -12,7 +12,8 @@ public class AnimalsApp {
         new Cat("Барсик"),
         new Cat("Мурзик"),
         new Dog("Мухтар"),
-        new Dog("Тузк")
+        new Dog("Тузк"),
+        new Dog("Пегас"),
     };
 
     for (Animal i : animals) {
@@ -21,7 +22,8 @@ public class AnimalsApp {
       i.swim(500);
       i.swim(5);
     }
-    System.out.println("Всего готов: "+Cat.count);
-    System.out.println("Всего собак: "+Dog.count);
+    System.out.println("Всего котов: "+Cat.cntCat);
+    System.out.println("Всего собак: "+Dog.cntDog);
+    System.out.println("Всего животных: " + Animal.cntAnimal);
   }
 }
