@@ -7,17 +7,17 @@ package Animals;
 public class Dog extends Animal {
   final int DISTANCE_RUN_LIMIT = 500;
   final int DISTANCE_SWIM_LIMIT = 10;
-  public static int count;
+  public static int cntDog;
 
   public Dog(String name) {
     super.name = name;
-    count++;
+    cntDog++;
   }
 
   @Override
   public void run(int l) {
-    if (l < DISTANCE_RUN_LIMIT) {
-      System.out.println(name + " пробежал " + l + " метров.");
+    if (l >=0 && l <= DISTANCE_RUN_LIMIT) {
+      super.run(l);
     } else {
       System.out.println("Собаки столько не бегают!");
     }
@@ -25,8 +25,8 @@ public class Dog extends Animal {
 
   @Override
   public void swim(int l) {
-    if (l < DISTANCE_SWIM_LIMIT) {
-      System.out.println(name + " проплыл " + l + "метров.");
+    if (l >= 0 && l <= DISTANCE_SWIM_LIMIT) {
+      super.swim(l);
     } else {
       System.out.println("Собаки столько не плавают!");
     }
